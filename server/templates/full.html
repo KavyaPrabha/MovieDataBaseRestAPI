@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Movies Data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1><center>LIST OF MOVIES</center></h1>
+        <table class="table">
+         <thead>
+             <tr>
+                 <td>id</td>
+                 <td>title</td>
+                 <td>popularity</td>
+                 <td>data</td>
+                 <td>revenue</td>
+                 <td>runtime</td>
+                 <td>vote average</td>
+                 <td>vote count</td>
+             </tr>
+         </thead>
+         <tbody>
+                 {% for row in res %}
+                 <tr>
+                 {% for i in row %}
+                 <td>{{ i }}</td>
+                 {% endfor %}
+                </tr>
+                 {% endfor %}
+         </tbody>
+        </table>
+    </body>
+</html>

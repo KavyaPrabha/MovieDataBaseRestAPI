@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>MoViEs!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+       body
+       {
+           background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+       }
+      #j
+      {   margin-top: 30px;
+          background-image: url(https://static0.srcdn.com/wordpress/wp-content/uploads/2019/04/Every-Upcoming-Marvel-Movie.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 350px;
+      }
+    </style>
+    </head>
+    <body>
+         <h1><center>Movie Corner</center></h1>
+
+        <div class="container">
+        <div class="jumbotron" id="j">
+        </div></div>
+        <br><br>
+
+        <div class="container">
+        <h1>
+            To know about movies search here...
+        </h1></div><br>
+
+        <div class="container" style="background-color:rgb(237, 237, 237);">
+        <form action="/search" method="POST">
+            <br>
+            <div class="form-group">
+                <input type="radio" name="list" value="all"> ALL<br><br>
+                <input type="radio" name="list" value="part"> PARTICULAR<br><br>
+
+              <label for="email">Search for a specific movie (IF PARTICULAR)</label>
+              <input type="text" class="form-control" name="mname">
+            </div>
+                      
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      
+        <br><br><br>
+    </body>
+</html>
